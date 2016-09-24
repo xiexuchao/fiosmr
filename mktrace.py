@@ -17,7 +17,7 @@ parser.add_argument("size_chunk",type=int)
 parser.add_argument("size_io",type=int)
 args = parser.parse_args()
 
-chunks = range(5000)
+chunks = range((120*256)/args.size_chunk) # refrain from the open zone issue
 random.shuffle(chunks)
 chunks = chunks[:args.numr_chunk]
 
