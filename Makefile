@@ -18,4 +18,4 @@ reset:
 	sudo zbc_reset_write_ptr $(DEVICE) -1
 
 clean:
-	rm -rf *.pyc *.trace *.log
+	rm -rf *.pyc *.trace *.log *.eps
